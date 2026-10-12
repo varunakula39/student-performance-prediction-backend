@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: student-performance-prediction-backend
+    runtime: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://frontend-iota-two-48.vercel.app
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: ML_SERVICE_URL
+        value: https://student-performance-prediction-ml-service.onrender.com/predict
