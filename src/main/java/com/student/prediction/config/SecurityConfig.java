@@ -29,7 +29,7 @@ public class SecurityConfig {
 
     private final JwtAuthenticationFilter jwtAuthFilter;
 
-    @Value("${cors.allowed-origins:http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000}")
+    @Value("${cors.allowed-origins:https://frontend-iota-two-48.vercel.app,http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000}")
     private String allowedOrigins;
 
     @Value("${cors.allowed-patterns:https://*.vercel.app,http://localhost:[*],http://127.0.0.1:[*]}")
