@@ -1,0 +1,49 @@
+# Compiled class files & build artifacts
+target/
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Log files
+*.log
+logs/
+
+# Local database storage (H2 fallback database)
+data/
+*.db
+*.mv.db
+*.trace.db
+
+# Secrets & local environment variables
+.env
+.env.local
+application-local.properties
+application-secret.properties
+
+# Eclipse IDE
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+
+# OS metadata
+.DS_Store
+Thumbs.db
